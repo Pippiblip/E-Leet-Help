@@ -1,4 +1,4 @@
-# Hiregram local MVP
+# E-Leet-Help local MVP
 
 A localhost adaptation of the product brief with a compact, Chrome-side-panel-style interface. It provides manual solution analysis, score and complexity comparisons, local history, review scheduling, layered hints, JSON export, and local data deletion.
 
