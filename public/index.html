@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="description" content="A private, local-first coding interview analysis companion.">
+    <title>Hiregram — solve with intention</title>
+    <link rel="stylesheet" href="/panel.css">
+    <script type="module" src="/app.js"></script>
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="panel-header">
+        <div class="panel-heading">
+          <a class="brand-mark" href="#" data-nav="result" aria-label="Hiregram result">h<span>.</span></a>
+          <div class="panel-heading-copy">
+            <strong id="panel-title">Hiregram</strong>
+            <span id="panel-subtitle">Local analysis companion</span>
+          </div>
+          <button class="icon-button" data-nav="settings" aria-label="Open settings" title="Settings">⚙</button>
+        </div>
+        <nav class="panel-tabs" role="tablist" aria-label="Analysis navigation">
+          <button class="tab-button active" data-nav="result" role="tab" aria-controls="app" aria-selected="true">Result</button>
+          <button class="tab-button" data-nav="reviews" role="tab" aria-controls="app" aria-selected="false">Due <span id="review-count">0</span></button>
+          <button class="tab-button" data-nav="history" role="tab" aria-controls="app" aria-selected="false">History</button>
+        </nav>
+      </header>
+      <div id="app" class="page-content" role="tabpanel"></div>
+    </main>
+    <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+  </body>
+</html>

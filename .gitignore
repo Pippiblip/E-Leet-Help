@@ -1,0 +1,10 @@
+.env
+node_modules/
+npm-debug.log*
+extension/node_modules/
+extension/dist/
+server/.env
+server/.venv/
+server/__pycache__/
+server/.pytest_cache/
+server/**/*.py[cod]

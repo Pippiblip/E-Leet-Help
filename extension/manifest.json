@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "LeetCode Post-Accept Analyzer",
+  "version": "0.1.0",
+  "description": "After an Accepted submission, optionally analyze your solution.",
+  "permissions": ["storage"],
+  "host_permissions": [
+    "https://leetcode.com/*",
+    "http://127.0.0.1:5000/*",
+    "https://YOUR-FLASK-HOST.example/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://leetcode.com/*"],
+      "js": ["hook.js"],
+      "run_at": "document_start",
+      "world": "MAIN"
+    },
+    {
+      "matches": ["https://leetcode.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
